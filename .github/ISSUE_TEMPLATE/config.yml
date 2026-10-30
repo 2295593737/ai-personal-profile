@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 只想随手提一个想法
+    url: https://github.com
+    about: 直接用空 Issue 记下来也可以，标题加 [档案] 前缀即可。
