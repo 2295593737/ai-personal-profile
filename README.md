@@ -211,6 +211,41 @@
 - Issue 关闭条件：内容已合并进 README 且我确认过。
 - 在网页端可把 Issues 加入 **Projects** 看板（Board 视图），用于可视化进度。
 
+**6 个待办 Issue 的正文已预置在 `tools/issues/`**，可用脚本一次性建好：
+
+```bash
+GH_TOKEN=你的令牌 python tools/create_issues.py
+```
+
+脚本幂等：已存在的同名 Issue 会跳过，可反复执行。
+
+---
+
+## 本地同步与日常维护
+
+**首次克隆**
+
+```bash
+git clone git@github.com:2295593737/ai-personal-profile.git
+cd ai-personal-profile
+```
+
+**每次修改**
+
+```bash
+git pull                                   # 先同步，避免冲突
+# ...编辑 README.md 的某个章节...
+git add README.md CHANGELOG.md
+git commit -m "profile(沟通风格): 补充不喜欢的长篇开场"
+git push
+```
+
+**约定**
+
+- 一次提交只改一个章节，commit 前缀用 `profile(章节名):`，方便按章节筛选历史。
+- 改了内容就同步补一行 CHANGELOG，否则以后回溯只能看 commit message。
+- 真实隐私细节先写在 `drafts/`（已在 .gitignore 中忽略），确认可公开后再移入 README。
+
 ---
 
 ## 版本与追溯

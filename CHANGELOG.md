@@ -5,6 +5,11 @@
 
 ## [Unreleased]
 
+### 新增
+
+- `tools/issues/` 六份待办正文，配合 `tools/create_issues.py` 一键生成标签与 Issue
+- README 增加「本地同步与日常维护」小节
+
 ### 待填充
 
 - 六大章节的示例条目替换为真实内容
