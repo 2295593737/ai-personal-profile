@@ -9,3 +9,8 @@ desktop.ini
 # 本地隐私草稿：真实个人信息先在这里打磨，确认后再进 README
 drafts/
 *.local.md
+
+# Python
+__pycache__/
+*.pyc
+
