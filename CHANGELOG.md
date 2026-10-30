@@ -5,9 +5,12 @@
 
 ## [Unreleased]
 
+### 移除
+
+- 去掉 Issues / Projects 待办跟踪方案：删除 `.github/ISSUE_TEMPLATE/`、`tools/create_issues.py`、`tools/issues/`（需求调整，进度改由目录状态列体现）
+
 ### 新增
 
-- `tools/issues/` 六份待办正文，配合 `tools/create_issues.py` 一键生成标签与 Issue
 - README 增加「本地同步与日常维护」小节
 
 ### 待填充
